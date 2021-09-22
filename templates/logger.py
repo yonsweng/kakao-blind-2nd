@@ -13,6 +13,7 @@ def set_logger():
     logger.addHandler(stream_hander)
 
     file_handler = logging.FileHandler('my.log')
+    file_handler.setFormatter(formatter)
     logger.addHandler(file_handler)
 
     return logger
