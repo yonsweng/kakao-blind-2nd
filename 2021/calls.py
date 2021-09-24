@@ -32,7 +32,7 @@ def start(problem):
     try:
         r = session.post(
             'https://kox947ka1a.execute-api.ap-northeast-2.amazonaws.com/prod/users/start',
-            headers={'X-Auth-Token': '30892db98d188b94203da89d0993418f'},
+            headers={'X-Auth-Token': 'a11caa3ab5f620dce440f9bed5e95d41'},
             data={'problem': problem},
         )
         r.raise_for_status()
